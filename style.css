@@ -1,7 +1,6 @@
 .underline::before {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
 }
 
 body {
@@ -37,7 +36,7 @@ body {
   position: relative;
 }
 
-.underline::before {
+.underline:before {
   content: "";
   position: absolute;
   left: 0;
@@ -51,11 +50,58 @@ body {
 .underline:hover::before {
   width: 100%;
 }
+#nav1::after {
+  content: "House";
+  width: 3rem;
+  height: 1.3rem;
+  bottom: 0;
+}
+#nav2::after {
+  content: "Cat";
+  width: 3rem;
+  height: 1.3rem;
+  bottom: 0;
+}
+#nav3::after {
+  content: "Faith";
+  width: 3rem;
+  height: 1.3rem;
+  bottom: 0;
+}
+#nav4::after {
+  content: "Gary";
+  width: 3rem;
+  height: 1.3rem;
+  bottom: 0;
+}
+
+#nav1:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f015";
+}
+
+#nav2:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f6be";
+}
+
+#nav3:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f654";
+}
+
+#nav4:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f647";
+}
 
 .navbar a:hover {
   background: white;
   color: black;
-  content: "";
 }
 
 /* Main content */
@@ -70,15 +116,35 @@ body {
   box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.5);
   margin: 0.5rem;
   display: inline-block;
+  width: 98%;
 }
 
 .right {
   float: right;
   display: block;
-  max-width: 50%;
+  max-width: 49%;
+  width: 49%;
 }
 .left {
   float: left;
   display: block;
-  max-width: 50%;
+  max-width: 49%;
+  width: 49%;
+}
+
+.center{
+  display: block;
+  width: 100%;
+  margin: auto;
+  text-align: center;
+}
+
+.footer {
+  margin: 0;
+  width: 100%;
+  text-align: center;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
+  color: white;
+  background-color: black;
 }
