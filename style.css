@@ -139,6 +139,11 @@ body {
   text-align: center;
 }
 
+.iframe{
+  width: 100vw;
+  height: 100vh;
+}
+
 .footer {
   margin: 0;
   width: 100%;
