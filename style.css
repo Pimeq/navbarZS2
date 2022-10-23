@@ -1,3 +1,9 @@
+@font-face {
+  font-family: zelda;
+  src: url(resources/Zelda-DX-TT-BRK.ttf.woff);
+}
+
+
 .underline::before {
   margin: 0;
   padding: 0;
@@ -16,6 +22,7 @@ body {
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
+  z-index: 100000;
 }
 
 /* Links inside the navbar */
@@ -140,8 +147,10 @@ body {
 }
 
 .iframe{
-  width: 100vw;
-  height: 100vh;
+  position: relative;
+  display: inline-block;
+  width: 100%;
+  height: 100%;
 }
 
 .footer {
@@ -152,4 +161,5 @@ body {
   padding-bottom: 2.5rem;
   color: white;
   background-color: black;
+  font-family: zelda;
 }
