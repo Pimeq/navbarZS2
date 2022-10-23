@@ -1,0 +1,14 @@
+body {
+    background: black;
+    padding-top: 45vh;
+    display: flex;
+    justify-content: center;
+  }
+
+  
+  /* DEMO-SPECIFIC STYLES */
+  .not_found h1 {
+    color: #fff;
+    font-family: monospace;
+  }
+  
