@@ -53,6 +53,10 @@ body {
   transition: width 0.25s ease-out;
 }
 
+.container img{
+  width: 10vw;
+}
+
 .underline:hover::before {
   width: 100%;
 }
@@ -81,6 +85,13 @@ body {
   bottom: 0;
 }
 
+#nav5::after {
+  content: "Boneworks";
+  width: 4.5rem;
+  height: 1.3rem;
+  bottom: 0;
+}
+
 #nav1:hover::after{
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
@@ -103,6 +114,11 @@ body {
   font-family: "Font Awesome 5 Free";
   font-weight: 900;
   content: "\f647";
+}
+#nav5:hover::after {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  content: "\f714";
 }
 
 .navbar a:hover {
