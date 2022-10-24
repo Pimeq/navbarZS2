@@ -3,6 +3,14 @@
   src: url(resources/Zelda-DX-TT-BRK.ttf.woff);
 }
 
+@keyframes FadeInAnim{
+0% {
+opacity:0;
+}
+100%{
+opacity:1;
+}
+}
 
 .underline::before {
   margin: 0;
@@ -12,6 +20,9 @@
 body {
   margin: 0;
   font-family: -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", 'Inter', "Helvetica Neue", sans-serif;
+animation: FadeInAnim ease 2s;
+animation-iteration-count: 1;
+animation-fill-mode: forwards;
 }
 
 /* The navigation bar */
